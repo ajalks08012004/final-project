@@ -1,0 +1,79 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f4f4f9;
+}
+
+.product-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 1rem;
+  background: #ffffff;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.15);
+}
+
+.product-img-container {
+  height: 250px;
+  overflow: hidden;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.product-img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  transition: transform 0.4s ease;
+}
+
+.product-card:hover .product-img {
+  transform: scale(1.1);
+}
+
+.add-btn {
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.add-btn:hover {
+  background-color: #28a745;
+  box-shadow: 0 0 10px rgba(40, 167, 69, 0.4);
+}
+.product-card {
+  background: linear-gradient(to bottom right, #0f2027, #203a43, #2c5364); /* Anime gradient */
+  border-radius: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #fff;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
+}
+
+.product-img-container {
+  overflow: hidden;
+}
+
+.product-img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.product-card:hover .product-img {
+  transform: scale(1.08);
+}
+
+.add-btn {
+  font-weight: bold;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.add-btn:hover {
+  background-color: #00d2ff;
+  color: #000;
+}

@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Poppins&display=swap');
+
+.anime-navbar {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  border-bottom: 2px solid #00e5ff;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.6);
+}
+
+.site-title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.8rem;
+  color: #00e5ff !important;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(0, 229, 255, 0.7);
+}
+
+.nav-link-custom {
+  color: #ffffff !important;
+  margin-left: 1rem;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-link-custom:hover {
+  color: #00f0ff !important;
+  text-shadow: 0 0 8px #00f0ff;
+}
+
+.nav-link-custom::after {
+  content: '';
+  display: block;
+  width: 0%;
+  height: 2px;
+  background: #00f0ff;
+  transition: width 0.4s;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.nav-link-custom:hover::after {
+  width: 100%;
+}
+
+.navbar-toggler {
+  border: none;
+  filter: brightness(1.8);
+}
+.anime-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+body {
+  padding-top: 80px; /* Height of navbar to prevent content from being hidden under it */
+}

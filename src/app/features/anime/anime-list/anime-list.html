@@ -1,0 +1,28 @@
+<div class="container py-5">
+  <h2 class="section-title mb-5"></h2>
+
+  
+  <div class="row row-cols-1 row-cols-md-3 g-5">
+    <div class="col" *ngFor="let anime of animeList">
+      <div class="card anime-card border-0 shadow-lg h-100">
+        <div class="card-img-container position-relative">
+          <img
+            *ngIf="anime.images?.jpg?.image_url"
+            [src]="anime.images.jpg.image_url"
+            class="card-img-top anime-img rounded-top"
+            [alt]="anime.title"
+          >
+          <a [routerLink]="['/anime', anime.mal_id]" class="btn view-btn btn-outline-light">
+            View Details
+          </a>
+        </div>
+        <div class="card-body text-light">
+          <h5 class="anime-title">{{ anime.title }}</h5>
+          <p class="card-text small text-light-emphasis text-truncate">
+            {{ anime.synopsis || 'No synopsis available.' }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
